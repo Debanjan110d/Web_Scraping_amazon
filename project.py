@@ -5,11 +5,11 @@ import time
 
 
 driver = webdriver.Chrome()
-query = "Laptop"
+query = input("What you want to search?!")
 file = 0
 
 
-for i in range(1, 10):
+for i in range(1, 15):
         driver.get(f"https://www.amazon.in/s?k={query}&page={i}&crid=3A0IRVO5U3IAW&sprefix=laptop%2Caps%2C253&ref=nb_sb_noss_1")
 
         elems = driver.find_elements(By.CLASS_NAME, "puis-card-container")
